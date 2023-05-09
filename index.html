@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Count Example</title>
+
+    <style>
+      body {
+        background-image: url('/Users/songjeonghyeog/Desktop/클릭커즈/universe-2742113.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #clickBtn {
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="clickBtn">Click me</button>
+    <div id="clickCount">0</div>
+
+    <script>
+       const clickBtn = document.getElementById("clickBtn");
+      const clickCount = document.getElementById("clickCount");
+      const clickBtn2 = document.getElementById("clickBtn2");
+      const clickCount2 = document.getElementById("clickCount2");
+
+      let count = 0;
+      let count2 = 0;
+
+      clickBtn.addEventListener("click", () => {
+        count++;
+        clickCount.textContent = count;
+      });
+
+      clickBtn2.addEventListener("click", () => {
+        count2++;
+        clickCount2.textContent = count2;
+      });
+      });
+    </script>
+  </body>
+</html>
